@@ -39,6 +39,7 @@ class LoginViewController: UIViewController, HomeViewControllerDelegate {
                     return
                 }
                 homeVC.delegate = self
+                homeVC.modalPresentationStyle = .fullScreen 
 //                self.navigationController?.pushViewController(homeVC, animated: true)
                 self.present(homeVC, animated: true, completion: nil)
             }
