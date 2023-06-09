@@ -23,18 +23,24 @@ class ProductCellTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
-        Viewcell.layer.cornerRadius = 15
-//        let yourview = UIView(frame: CGRect(x: 0, y: 0,width: 50,height: 50))
-//        yourview.backgroundColor = .red
-//        yourview.layer.cornerRadius = 10
-//        self.view.addSubview(yourview)
+        myimageView.layer.cornerRadius = myimageView.frame.height / 2
+        myimageView.layer.masksToBounds = true
+        myimageView.clipsToBounds = true
+        myimageView.layer.borderWidth = 1
+        Viewcell.layer.cornerRadius = 12
+        plus.layer.cornerRadius = plus.frame.height / 2
+        plus.layer.masksToBounds = true
+        plus.clipsToBounds = true
+        plus.layer.borderWidth = 0
+        minus.layer.cornerRadius = minus.frame.height / 2
+        minus.layer.masksToBounds = true
+        minus.clipsToBounds = true
+        minus.layer.borderWidth = 0
     }
-
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+        
     }
     
 }

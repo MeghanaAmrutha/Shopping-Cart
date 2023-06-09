@@ -23,6 +23,8 @@ class RegisterViewController: UIViewController, HomeViewControllerDelegate {
         super.viewDidLoad()
 
     }
+   
+
     @IBAction func registerButton(_ sender: UIButton) {
         guard let email = emailTextField.text else {
             return
@@ -31,7 +33,8 @@ class RegisterViewController: UIViewController, HomeViewControllerDelegate {
             return
         }
         
-        Auth.auth().createUser(withEmail: email, password: password) { firebaseResult, error in
+        Auth.auth().createUser(withEmail: email, password: password) {
+            firebaseResult, error in
             if let a = error {
                 print("Error")
             }

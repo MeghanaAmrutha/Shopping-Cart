@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="E3F-6Z-pWe">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -267,7 +267,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="G9p-3i-5i7">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="separatorColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="sectionIndexBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -277,7 +277,7 @@
                                 </connections>
                             </tableView>
                             <view contentMode="scaleToFill" id="koV-Df-Q6j">
-                                <rect key="frame" x="0.0" y="801" width="428" height="44"/>
+                                <rect key="frame" x="0.0" y="750" width="428" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kCt-Kp-asp">
@@ -302,7 +302,7 @@
                                             <color key="baseBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <action selector="confirmCartDetails:" destination="JMy-MJ-BPO" eventType="touchUpInside" id="Q7h-3O-4uq"/>
+                                            <action selector="confirmCartDetails:" destination="JMy-MJ-BPO" eventType="touchUpInside" id="i9g-rX-fal"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -335,7 +335,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xYB-6l-8Ug" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5291" y="115"/>
+            <point key="canvasLocation" x="3726" y="115"/>
         </scene>
         <!--Confirmation View Controller-->
         <scene sceneID="W91-c2-4YV">
@@ -400,13 +400,15 @@
                             <constraint firstItem="8cU-d2-MNs" firstAttribute="leading" secondItem="nMu-x3-aOy" secondAttribute="leading" id="zST-hs-aYc"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="bq2-Ts-626"/>
                     <connections>
+                        <outlet property="confirmButton" destination="x2L-4e-XNa" id="ff4-TT-QDk"/>
                         <outlet property="tableView" destination="8cU-d2-MNs" id="vc3-fI-D5q"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aVu-t5-AFT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6207" y="131"/>
+            <point key="canvasLocation" x="4590" y="125"/>
         </scene>
         <!--Acknowledgement View Controller-->
         <scene sceneID="mqe-sj-F3Y">
@@ -465,25 +467,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c2C-XB-8Ed" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7157" y="125"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="kYi-1c-dgV">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Phz-VF-u3M" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="y5E-xJ-1lh">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="JMy-MJ-BPO" kind="relationship" relationship="rootViewController" id="dYQ-eH-AdL"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="xEB-MA-cPc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4283" y="114"/>
+            <point key="canvasLocation" x="5522" y="125"/>
         </scene>
     </scenes>
     <designables>

@@ -19,12 +19,28 @@ class ViewController: UIViewController, RegisterViewControllerDelegate, LoginVie
     @IBAction func loginButton(_ sender: Any) {
         loginButtonTapped()
     }
+//    let defaults = UserDefaults.standard
+//    defaults.set(email, forKey: "email")
+//    defaults.set(password, forKey: "password")
     
     override func viewDidLoad() {
         super.viewDidLoad()
         if let image = UIImage(named: "cart.jpg") {
             imageView.contentMode = .scaleAspectFit
             imageView.image = image
+//
+//         let defaults = UserDefaults.standard
+//
+//            if let email = defaults.string(forKey: "email"),
+//               let password = defaults.string(forKey: "password") {
+//                // User is already logged in
+//                // Navigate to Home Screen or perform necessary action
+//            } else {
+//                // User is not logged in
+//                // Show login/signup screen
+//            }
+
+          
         }
     }
     

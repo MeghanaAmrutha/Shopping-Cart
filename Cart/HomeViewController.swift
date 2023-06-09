@@ -101,7 +101,7 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     @IBAction func confirmCartDetails(_ sender: UIButton) {
         let confirmationVC = storyboard?.instantiateViewController(identifier: "ConfirmationViewController") as? ConfirmationViewController
         confirmationVC?.delegate = self
-        confirmationVC?.title = "Shopping Bag"
+//        confirmationVC?.title = "Shopping Bag"
         confirmationVC?.selectedCartItems = cart.getItems()
         navigationController?.pushViewController(confirmationVC!, animated: true)
     }
